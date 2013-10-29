@@ -1,0 +1,75 @@
+CREATE TABLE members (
+
+id int(11) NOT NULL auto_increment,
+login varchar(50) NOT NULL,
+pass varchar(50) NOT NULL,
+picture varchar(50) NOT NULL,
+shortname varchar(50) NOT NULL,
+description varchar(200) NOT NULL,
+nb_posts int(11) NOT NULL,
+nb_followers int(11) NOT NULL,
+nb_subscriptions int(11) NOT NULL,
+
+PRIMARY KEY (id)
+);
+
+
+
+CREATE TABLE posts(
+
+id int(11) NOT NULL auto_increment,
+text varchar(300) NOT NULL,
+member_id int(11) NOT NULL,
+dateCreation datetime NOT NULL,
+parent_post_id int(11) NULL,
+nb_retweets int(11) NOT NULL,
+retweet_post_id int(11) NULL,
+PRIMARY KEY (`id`)
+);
+
+
+
+CREATE TABLE hashtags(
+
+id int(11) NOT NULL auto_increment,
+name varchar(20) NOT NULL,
+nb_posts int(11) NOT NULL,
+dateLastUse datetime NOT NULL,
+PRIMARY KEY (`id`)
+);
+
+
+
+CREATE TABLE hashtags_posts(
+
+id int(11) NOT NULL auto_increment,
+post_id int(11) NOT NULL,
+hashtag_id int(11) NOT NULL,
+PRIMARY KEY (`id`)
+);
+
+
+
+
+
+CREATE TABLE mentions(
+
+id int(11) NOT NULL auto_increment,
+member_id int(11) NOT NULL,
+post_id int(11) NOT NULL,
+PRIMARY KEY (`id`)
+);
+
+
+
+CREATE TABLE followers(
+
+id int(11) NOT NULL auto_increment,
+member_id int(11) NOT NULL,
+follower_member_id int(11) NOT NULL,
+PRIMARY KEY (`id`)
+);
+
+
+
+

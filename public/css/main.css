@@ -1,0 +1,208 @@
+*{
+font-family:arial;
+font-size:12px;
+}
+img{
+border:none;
+}
+a{
+color:darkblue;
+}
+body{
+background:#bbb;
+margin:0px;
+}
+
+.main{
+margin:0px auto;
+width:700px;
+background:#fff;
+border:2px solid #444;
+box-shadow: 1px 1px 12px #555;
+}
+.main .menu{
+background:url('images/menu-fd.png');
+height:30px;
+}
+	.main .menu ul{
+	margin:0px;
+	padding:0px;
+	height:30px;
+	}
+	.main .menu a{
+	text-decoration:none;
+	color:white;
+	font-weight:bold;
+	}
+	.main .menu li{
+	padding:0px 20px;
+	margin:0px;
+	list-style:none;
+	display:inline-block;
+	height:23px;
+	padding-top:7px;
+	}
+	.main .menu .selectionne{
+	background:url('images/menu-fd2.png');
+	}
+	.main .menu .write{
+	background:url('images/menu-fd3.png') no-repeat 146px;
+	width:146px;text-align:right
+	}
+.main .content{
+
+}
+
+.main .content form .textarea, .main .content form .input{
+width:100%;
+}
+
+.main .pagination ul{
+margin:0px;
+padding:0px;
+}
+.main .pagination li{
+padding:0px;
+display:inline;
+list-style:none;
+}
+.main .pagination .selectionne a{
+text-decoration:none;
+font-weight:bold;
+}
+
+.inputDateAnnee{
+width:100px;
+}
+.inputDateMois{
+width:30px;
+}
+.inputDateJour{
+width:30px;
+}
+.taches{
+border-collapse: collapse;
+}
+.taches th{
+text-align:left;
+}
+.content td{
+vertical-align:top;
+}
+
+.tb_list{
+border-collapse: collapse;
+}
+.tb_list th,.tb_list td{
+border:1px solid gray;
+}
+.tb_list th{
+text-align:left;
+}
+.tb_list td{
+vertical-align:top;
+}
+.tb_list .alt td{
+background:#eee;
+}
+
+.profil{
+border-collapse:collapse;
+width:680px;
+margin:10px;
+}
+.profil td{
+border:1px solid #777;
+padding:8px;
+color:#777;
+}
+.profil td strong{
+color:#000;
+}
+
+.tb_posts{
+margin:4px;
+margin-top:20px;
+width:680px;
+border-collapse:collapse;
+}
+.tb_posts td{
+padding:6px;
+padding-bottom:20px;
+border-top:1px solid #ccc;
+}
+.tb_posts strong{
+font-size:14px;
+}
+.tb_posts a{
+text-decoration:none;
+}
+
+
+.tb_subscriptions{
+margin:4px;
+margin-top:20px;
+width:680px;
+border-collapse:collapse;
+}
+.tb_subscriptions td{
+padding:6px;
+padding-bottom:20px;
+border-top:1px solid #ccc;
+}
+
+.profil{
+border-collapse:collapse;
+width:678px;
+margin:10px;
+margin-top:5px;
+}
+.profil td{
+border:1px solid #777;
+padding:8px;
+color:#777;
+}
+.profil td strong{
+color:#000;
+}
+
+.btn, .btnDisabled{
+border:2px solid #196160;
+background:#2a9190 url('images/btn-fd.png');
+display:inline-block;
+text-decoration:none;
+padding:2px 6px;
+color:white;
+font-weight:bold;
+text-align:center;
+}
+.btnDisabled{
+border-color:#444;
+background:#2a9190 url('images/btn-fd2.png');
+
+}
+
+.popup{
+margin:20px;
+width:650px;
+border:3px solid gray
+}
+.popup .close{
+background:gray;
+margin-top:0px;
+text-align:right;
+}
+.popup .close a{
+color:white;
+text-decoration:none;
+}
+h1{
+font-size:14px;
+padding-left:8px;
+color:#444;
+}
+
+.tbCenter{
+margin:auto;
+}
+
